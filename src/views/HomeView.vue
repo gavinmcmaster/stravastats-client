@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <section class="hero is-medium is-dark mb-6">
+        <div class="hero-body has-text-centered">
+            <p class="title mb-6">
+                Strava Stats
+            </p>
+            <p class="subtitle">
+                Extended Features
+            </p>
+        </div>
+    </section>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import axios from 'axios'
 
 export default {
-  name: 'HomeView',
+  name: 'Home',
+  data() {
+  },
   components: {
-    HelloWorld
+  },
+  mounted() {
+    document.title = 'Home | Strava Stats'
+  },
+  methods: {
+   
   }
 }
 </script>
